@@ -1,5 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import { App } from './App.jsx'
+import './index.css'
 
 const SpecialButton = ({text}) => {
   return (
@@ -13,9 +15,5 @@ const SpecialButton = ({text}) => {
 }
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.Fragment>
-    <SpecialButton text="Button 1" />
-    <SpecialButton text="Button 2" />
-    <SpecialButton text="Button 3" />
-  </React.Fragment>
+  <App />
 )
